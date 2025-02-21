@@ -6,21 +6,50 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Krineta Docs',
+			favicon: './src/assets/krineta.jpg',
+			expressiveCode: {
+				themes: ['ayu-dark'],
+				},
+			logo: {
+				src: './src/assets/krineta.jpg',
+				replacesTitle: true,
+			},
+		    customCss: [
+			  './src/styles/custom.css',
+				],
+			components: {
+				ThemeSelect: './src/components/ThemeComponent.astro',
+				},
 			social: {
 				github: 'https://github.com/withastro/starlight',
+				discord: 'https://discord.gg/n2WmGaEn3H',
 			},
+			locales: {
+				root: {
+					label: 'Magyar',
+					lang: 'hu',
+				},
+				},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Krineta VPN',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						'vpn/info',
+						'vpn/dtag',
+						'vpn/services',
+						{
+							label: 'Első lépések',
+							items: [
+								'vpn/first-steps/config',
+								'vpn/first-steps/install',
+								'vpn/first-steps/setup',
+							],
+						},
+						'vpn/router',
+						'vpn/troubleshoting',
+						'vpn/support',
 					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
 				},
 			],
 		}),

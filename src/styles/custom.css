@@ -1,0 +1,39 @@
+:root {
+	color-scheme: dark;
+	font-size: 16px;
+
+	--sl-color-black: #000000;
+	--sl-color-white: #e9e9e9;
+	--sl-color-text: #d1d5db;  
+	--sl-color-gray-5: #333333;
+
+	--sl-color-bg: var(--sl-color-black);
+	--sl-color-bg-nav: var(--sl-color-black);
+	--sl-color-bg-sidebar: var(--sl-color-black);
+	--sl-color-hairline: var(--sl-color-gray-5);
+
+	--sl-color-accent: var(--sl-color-white);
+	--sl-color-bg-accent: var(--sl-color-white);
+	--sl-color-text-invert: var(--sl-color-black);
+	--sl-color-text-accent: var(--sl-color-white);
+
+}
+
+.right-sidebar-panel a {
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+}
+
+.sl-steps li:before {
+	background-color: var(--sl-color-black);
+	box-shadow: inset 0 0 0 0.5px var(--sl-color-white);
+}
+
+.sl-steps li:after {
+	background-color: var(--sl-color-white);
+	--guide-width: 0.5px;
+}
+
+[data-theme='light'] {
+  display: none !important;
+}
