@@ -22,7 +22,7 @@ export default defineConfig({
 				ThemeSelect: './src/components/ThemeComponent.astro',
 				},
 			social: {
-				github: 'https://github.com/FXTELEKOM',
+				github: 'https://github.com/krineta',
 				discord: 'https://discord.gg/n2WmGaEn3H',
 			},
 			locales: {
