@@ -11,6 +11,16 @@ export default defineConfig({
 			expressiveCode: {
 				themes: ['ayu-dark'],
 				},
+			head: [
+				{
+				tag: 'script',
+				attrs: {
+					src: 'https://a.fxtelekom.hu/script.js',
+					'data-website-id': '0c95ea3c-6388-460f-a15a-7269b9b0f285',
+					defer: true,
+				  },
+				},
+			  ],
 			logo: {
 				src: './src/assets/krineta.jpg',
 				replacesTitle: true,
