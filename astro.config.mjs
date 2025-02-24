@@ -30,6 +30,7 @@ export default defineConfig({
 				],
 			components: {
 				ThemeSelect: './src/components/ThemeComponent.astro',
+				ThemeProvider: './src/components/ThemeProvider.astro',
 				},
 			social: {
 				github: 'https://github.com/krineta',

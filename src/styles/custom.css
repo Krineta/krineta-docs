@@ -34,3 +34,6 @@
 	--guide-width: 0.5px;
 }
 
+.social-icons::after {
+  display: none;
+}
