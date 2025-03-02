@@ -43,6 +43,7 @@
 }
 
 .pagefind-ui__result {
+	border-width: 2px;
 	border-color: var(--sl-color-white);
 
 }
