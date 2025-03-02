@@ -24,16 +24,20 @@
 	font-size: var(--sl-text-sm);
 }
 
-.sl-steps li:before {
+.sl-steps>li:before {
 	background-color: var(--sl-color-black);
 	box-shadow: inset 0 0 0 0.5px var(--sl-color-white);
 }
 
-.sl-steps li:after {
+.sl-steps>li:after {
 	background-color: var(--sl-color-white);
 	--guide-width: 0.5px;
 }
 
 .social-icons::after {
   display: none;
+}
+
+.dialog-frame {
+	background-color: var(--sl-color-black);
 }
