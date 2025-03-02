@@ -41,3 +41,8 @@
 .dialog-frame {
 	background-color: var(--sl-color-black);
 }
+
+.pagefind-ui__result {
+	border-color: var(--sl-color-white);
+
+}
