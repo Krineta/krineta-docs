@@ -1,0 +1,33 @@
+@layer base, starlight, theme, components, utilities;
+
+@import '@astrojs/starlight-tailwind';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@theme {
+
+	--fxdark: #121212;
+	--fxorange: #ff7b25;
+	--fxcard: #1a1a1a;
+
+	/* Your preferred text font. Starlight uses a system font stack by default. */
+	--font-sans: 'Atkinson Hyperlegible';
+	/* Your preferred code font. Starlight uses system monospace fonts by default. */
+	--font-mono: 'IBM Plex Mono';
+
+	/* Generated accent color palettes. */
+	--color-accent-200: var(--fxorange); /* linkek, gombok */
+	--color-accent-600: var(--fxdark);
+	--color-accent-900: var(--fxdark);
+	--color-accent-950: var(--color-gray-100);
+	/* Generated gray color palettes. */
+	--color-gray-100: #f4f7f3;
+	--color-gray-200: #eaf0e8;
+	--color-gray-300: var(--color-white); 
+	--color-gray-400: var(--color-gray-300);
+	--color-gray-500: #4f5c4d;
+	--color-gray-700: var(--fxorange); /* keretek, elválasztók */
+	--color-gray-800: var(--fxcard); /* navbarok */
+	--color-gray-900: var(--fxdark); /* háttér */
+
+}
