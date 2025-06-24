@@ -35,8 +35,8 @@ export default defineConfig({
               ThemeProvider: './src/components/ThemeProvider.astro',
               },
           social: [
-             { icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' },
-             { icon: 'discord', label: 'Discord', href: 'https://astro.build/chat' },
+             { icon: 'github', label: 'GitHub', href: 'https://github.com/fxtelekom' },
+             { icon: 'discord', label: 'Discord', href: 'https://discord.gg/n2WmGaEn3H' },
            ],
           locales: {
               root: {
@@ -46,23 +46,8 @@ export default defineConfig({
               },
           sidebar: [
               {
-                  label: 'Krineta VPN',
-                  items: [
-                      'vpn/info',
-                      'vpn/dtag',
-                      'vpn/services',
-                      {
-                          label: 'Első lépések',
-                          items: [
-                              'vpn/first-steps/config',
-                              'vpn/first-steps/install',
-                              'vpn/first-steps/setup',
-                          ],
-                      },
-                      'vpn/router',
-                      'vpn/troubleshoting',
-                      'vpn/support',
-                  ],
+                  label: 'W.I.P',
+					items: [],
               },
           ],
       }),

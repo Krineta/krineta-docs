@@ -1,1 +1,1 @@
-# Krineta dokumentáció
+# dokumentáció
