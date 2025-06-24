@@ -8,7 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   integrations: [
       starlight({
-          title: 'Krineta Docs',
+          title: 'FXTELEKOM Docs',
           favicon: './src/assets/favicon.ico',
           expressiveCode: {
               themes: ['ayu-dark'],
