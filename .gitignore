@@ -20,5 +20,5 @@ pnpm-debug.log*
 .DS_Store
 
 # lock files
-pnpm-lock.yaml
+pnpm-lock.*
 package-lock.json
