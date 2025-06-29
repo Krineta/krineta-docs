@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [
       starlight({
           title: 'FXTELEKOM Docs',
-          favicon: './src/assets/favicon.ico',
+          favicon: '/assets/favicon.ico',
           expressiveCode: {
               themes: ['ayu-dark'],
               },
@@ -24,7 +24,7 @@ export default defineConfig({
               },
             ],
           logo: {
-              src: './src/assets/favicon.jpg',
+              src: './public/assets/favicon.jpg',
               replacesTitle: true,
           },
           customCss: [
