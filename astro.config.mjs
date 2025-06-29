@@ -67,6 +67,7 @@ export default defineConfig({
                   label: 'Konfiguráció használata',
 					items: [
 						"config/create",
+						"config/custom-ip",
 						{
 							label: "Wireguard használata",
 								items: [
