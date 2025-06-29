@@ -46,8 +46,35 @@ export default defineConfig({
               },
           sidebar: [
               {
-                  label: 'W.I.P',
-					items: [],
+                  label: 'Bejelentkezési folyamat',
+					items: [
+						"login-flow/register",
+						"login-flow/login",
+					],
+              },
+              {
+                  label: 'Előfizetés kezelése',
+					items: [
+						"subscription/funds",
+						"subscription/plans",
+						"subscription/subscription",
+						"subscription/cancel",
+						"subscription/track",
+
+					],
+              },
+              {
+                  label: 'Konfiguráció használata',
+					items: [
+						"config/create",
+						{
+							label: "Wireguard használata",
+								items: [
+									"config/wg-install",
+									"config/wg-use",
+								],
+						},
+					],
               },
           ],
       }),

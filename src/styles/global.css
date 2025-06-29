@@ -10,11 +10,6 @@
 	--fxorange: #ff7b25;
 	--fxcard: #1a1a1a;
 
-	/* Your preferred text font. Starlight uses a system font stack by default. */
-	--font-sans: 'Atkinson Hyperlegible';
-	/* Your preferred code font. Starlight uses system monospace fonts by default. */
-	--font-mono: 'IBM Plex Mono';
-
 	/* Generated accent color palettes. */
 	--color-accent-200: var(--fxorange); /* linkek, gombok */
 	--color-accent-600: var(--fxdark);
