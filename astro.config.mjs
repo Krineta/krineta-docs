@@ -9,6 +9,7 @@ export default defineConfig({
   integrations: [
       starlight({
           title: 'FXTELEKOM Docs',
+		  defaultLocale: 'root',
           favicon: '/assets/favicon.ico',
           expressiveCode: {
               themes: ['ayu-dark'],
@@ -40,20 +41,30 @@ export default defineConfig({
            ],
           locales: {
               root: {
+                  label: 'English',
+                  lang: 'en',
+              },
+              hu: {
                   label: 'Magyar',
                   lang: 'hu',
               },
-              },
-          sidebar: [
-              {
-                  label: 'Bejelentkezési Folyamat',
+        },
+		  sidebar: [
+			  {
+				  label: "Login Flow",
+				  translations: {
+					"hu": "Bejelentkezési Folyamat",
+					},
 					items: [
-						"login-flow/register",
-						"login-flow/login",
+						{ slug: "login-flow/register" },
+						{ slug: "login-flow/login" },
 					],
-              },
-              {
-                  label: 'Előfizetés Kezelése',
+			  },
+			  {
+				  label: 'Managing Subscriptions',
+				  translations: {
+					"hu": "Előfizetés Kezelése",
+					},
 					items: [
 						"subscription/funds",
 						"subscription/plans",
@@ -62,23 +73,29 @@ export default defineConfig({
 						"subscription/track",
 
 					],
-              },
-              {
-                  label: 'Konfiguráció Használata',
+			  },
+			  {
+				  label: 'Using Configurations',
+				  translations: {
+					"hu": "Konfiguráció Használata",
+					},
 					items: [
 						"config/create",
-            "config/custom-ip",
-            "config/testing",
+						"config/custom-ip",
+						"config/testing",
 						{
-							label: "Wireguard Használata",
+							label: "Using WireGuard",
+				  		    translations: {
+							  "hu": "WireGuard Használata",
+							  },
 								items: [
 									"config/wg-install",
 									"config/wg-use",
 								],
 						},
 					],
-              },
-          ],
+			  },
+		  ],
       }),
 	],
 
