@@ -46,14 +46,14 @@ export default defineConfig({
               },
           sidebar: [
               {
-                  label: 'Bejelentkezési folyamat',
+                  label: 'Bejelentkezési Folyamat',
 					items: [
 						"login-flow/register",
 						"login-flow/login",
 					],
               },
               {
-                  label: 'Előfizetés kezelése',
+                  label: 'Előfizetés Kezelése',
 					items: [
 						"subscription/funds",
 						"subscription/plans",
@@ -64,13 +64,13 @@ export default defineConfig({
 					],
               },
               {
-                  label: 'Konfiguráció használata',
+                  label: 'Konfiguráció Használata',
 					items: [
 						"config/create",
             "config/custom-ip",
             "config/testing",
 						{
-							label: "Wireguard használata",
+							label: "Wireguard Használata",
 								items: [
 									"config/wg-install",
 									"config/wg-use",
